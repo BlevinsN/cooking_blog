@@ -44,14 +44,27 @@ li {
   width: 33%;
 }
 .featured_recipes{
-  text-align: center;
   width: 100%;
   overflow: auto;
+  line-height: 60%;
+}
+.featured_recipes h6{
+  padding-left: 40px;
+  text-align: left;
+}
+.featured_recipes h2{
+  padding-top: 0px;
+  text-align: center;
+}
+.featured_recipes h4{
+  padding-top: 0px;
+  text-align: center;
+}
+.featured_recipes h1{
+  text-align: center;
 }
 figure img {
   width:100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 #favorites{
   margin-left: auto;
