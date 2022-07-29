@@ -3,18 +3,19 @@
   <head>
     <title> Insert Title Here </title>
     <link href="../CSS/recipe_template.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div id="menu_bar">
-      <ul id="homepage_menu">
-        <li><a href="#" class="on"> Featured </a></li>
-        <li><a href="#"> Page 2</a></li>
-        <li><a href="#"> Page 3</a></li>
-        <li><a href="#"> Page 4</a></li>
-        <li><a href="#"> Contact </a></li>
-        <li> Follow Me </li>
-        <li> <a data-pin-do="buttonFollow" href="https://www.pinterest.com/pinterest/">Blevins</a></li>
-      </ul>
+    <div class="menu_bar" id="top_menu">
+      <a href="#" class="on"> Featured </a>
+      <a href="#"> Page 2</a>
+      <a href="#"> Page 3</a>
+      <a href="#"> Page 4</a>
+      <a href="#"> Contact </a>
+      <a data-pin-do="buttonFollow" href="https://www.pinterest.com/pinterest/">Blevins</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggle_menubar()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
 
@@ -31,5 +32,17 @@
     </div>
 
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+    <script>
+      function toggle_menubar() {
+        var nav_bar = document.getElementById("top_menu");
+        if (nav_bar.className === "menu_bar") {
+          nav_bar.className += " responsive";
+        } else {
+          nav_bar.className = "menu_bar";
+        }
+      }
+  </script>
+
   </body>
 </html>
