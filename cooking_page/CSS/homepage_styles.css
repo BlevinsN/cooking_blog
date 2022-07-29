@@ -13,7 +13,7 @@ a{
   width:300px;
 
 }
-.current_date{
+#current_date{
   float:right;
   margin: 5px;
   width:300px
@@ -42,6 +42,7 @@ li {
 .col_one, .col_two, .col_three{
   float:left;
   width: 33%;
+  display:grid;
 }
 .featured_recipes{
   width: 100%;
