@@ -2,13 +2,36 @@
 <html>
   <head>
     <title> INSERT HOMEPAGE TITLE </title>
+    <script src="https://kit.fontawesome.com/01545b2631.js" crossorigin="anonymous"></script>
+    <link href="../CSS/homepage_styles.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <div id="navigation">
-
+    <div class="menu_bar" id="top_menu">
+      <h1> BLEVINS </h1>
+      <a href="#" class="on"> Home </a>
+      <a href="#"> Recipes</a>
+      <a href="#"> About</a>
+      <a href="#"> Gallery</a>
+      <a href="#"> Contact </a>
+      <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+      <a href=""> <i class="fa-brands fa-pinterest"></i> </a>
+      <a href="javascript:void(0);" class="icon" onclick="toggle_menubar()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <div id="welcome_message">
-
+    <div id="spacing">
+    </div>
+    <div id="welcome">
+      <div id="welcome_text_container">
+        <div id="welcome_text">
+          <h1> Howdy! </h1>
+          <p> Welcome to my cooking page. This week we are pushing the meatballs
+          in honor of my boy on the bachelor!</p>
+        </div>
+        <div id="welcome_button">
+          <a href="#"> Check it out </a>
+        </div>
+      </div>
     </div>
     <div id="second_section">
 
@@ -16,11 +39,62 @@
     <div id="third_section">
 
     </div>
-    <div id="gallary-recipes">
-
-    </div>
     <div id="footer">
-
+      <div id="gallary-recipes">
+        <div class="featured">
+          <a href="#">
+            <figure>
+              <img src="../Images/pot_de_creme_horz.JPG" />
+            </figure>
+          </a>
+        </div>
+        <div class="featured">
+          <a href="#">
+            <figure>
+              <img src="../Images/biscotti_horz.JPG" />
+            </figure>
+          </a>
+        </div>
+        <div class="featured">
+          <a href="#">
+            <figure>
+              <img src="../Images/ratatouille_horz.JPG" />
+            </figure>
+          </a>
+        </div>
+      <div class="featured">
+        <a href="#">
+          <figure>
+            <img src="../Images/pot_de_creme_horz.JPG" />
+          </figure>
+        </a>
+      </div>
+      <div class="featured">
+        <a href="#">
+          <figure>
+            <img src="../Images/pot_de_creme_horz.JPG" />
+          </figure>
+        </a>
+      </div>
     </div>
+    <hr>
+      <p> Interested in working together? </p>
+      <a href="#" id="contact_me"> Contact Me </a>
+      <div id="social_links">
+        <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+        <a href=""> <i class="fa-brands fa-pinterest"></i> </a>
+      </div>
+    </div>
+
+    <script>
+      function toggle_menubar() {
+        var nav_bar = document.getElementById("top_menu");
+        if (nav_bar.className === "menu_bar") {
+          nav_bar.className += " responsive";
+        } else {
+          nav_bar.className = "menu_bar";
+        }
+      }
+  </script>
   </body>
 <html>
